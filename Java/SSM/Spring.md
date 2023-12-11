@@ -81,3 +81,37 @@
 * 使用IOC容器管理bean（IOC)
 * 在IOC容器内将有依赖关系的bean进行关系绑定（DI）
 * 最终结果为:使用对象时不仅可以直接从IOC容器中获取，并且获取到的bean已经绑定了所有的依赖关系.
+
+## 项目结构
+
+![image-20231210153917212](https://noclose-image.oss-cn-hangzhou.aliyuncs.com/img/java/Mavenimage-20231210153917212.png)
+
+- **mvnw**和**mvnw.cmd**——这些是Maven包装器脚本。即使您的计算机上没有安装Maven，也可以使用这些脚本构建项目。
+- pom.xml——这是Maven构建规范。
+- TacocloudApplication.java——这是引导项目的Spring Boot 主类。
+- application.properties——该文件最初为空，但提供了一个可以指定配置属性的地方。
+- static——在此文件夹中，可以放置要提供给浏览器的任何静态内容(图像、样式表、JavaScript等），最初为空。
+- templates—在此文件夹中，放置用于向浏览器呈现内容的模板文件。
+- TacocloudApplicationTests.java——这是一个简单的测试类，可确保成功加载Spring应用程序上下文。开发应用程序时，将添加更多的测试。
+
+![image-20231210154051794](https://noclose-image.oss-cn-hangzhou.aliyuncs.com/img/java/Mavenimage-20231210154051794.png)
+
+starter依赖提供的三个主要好处：
+
+- 构建的文件将会小得多，也更容易管理，因为不需要对每一个可能需要的库都声明一个依赖项。
+- 可以根据它们提供的功能来考虑需要的依赖关系，而不是根据库名来考虑。如果正在开发一个web应用程序，那么将添加web starter依赖项，而不是一个编写web应用程序的各个库的清单。
+- 不用担心 library版本问题。可以相信的是，对于给定版本的Spring Boot,可间接地引入的库的版本将是兼容的，只需要考虑使用的是哪个版本的 Spring Boot。
+
+# Spring MVC
+
+## 请求映射注解
+
+| 注解            | 描述                |
+| --------------- | ------------------- |
+| @RequestMapping | 通用请求处理        |
+| @GetMapping     | 处理HTTP GET请求    |
+| @PostMapping    | 处理HTTP POST请求   |
+| @PutMapping     | 处理HTTP PUT请求    |
+| @DeleteMapping  | 处理HTTP DELETE请求 |
+| @PatchMapping   | 处理 HTTP PATCH     |
+

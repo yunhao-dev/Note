@@ -5,12 +5,7 @@ if (isset($_POST['ok1'])) {
     $userid = $_POST['userid'];
     $password = $_POST['password'];
 
-    // 使用mysqli连接数据库
-    $conn = new mysqli("your_host", "your_username", "your_password", "your_database");
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+  
 
     // 防止 SQL 注入攻击
     $userid = mysqli_real_escape_string($conn, $userid);
@@ -33,10 +28,7 @@ if (isset($_POST['ok1'])) {
     $conn->close();
 }
 
-if (isset($_POST['ok2'])) {
-    // 注册逻辑
-    // 你的注册代码
-}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

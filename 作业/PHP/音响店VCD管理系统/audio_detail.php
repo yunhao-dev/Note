@@ -16,7 +16,7 @@
             height: 100vh;
         }
 
-        #Login_Register {
+        #AudioDetails {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
@@ -30,28 +30,12 @@
             color: #333;
         }
 
-        form {
-            text-align: center;
+        div {
+            text-align: left;
         }
 
-        input {
-            padding: 8px;
-            margin: 6px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        h3 {
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #borrowMan label {
-            margin: 0 5px; /* 添加一些间距 */
+        label {
+            font-weight: bold;
         }
 
         button {
@@ -71,20 +55,44 @@
     </style>
 </head>
 <body>
-    <div id="Login_Register">
-        <h2>租赁管理</h2>
-        <form action="" method="post">
-            用户ID：<input type="text" name="userid" placeholder="请输入用户id"><br><br>
-            VCD号：<input type="text" name="bookid" placeholder="请输入VCD号"><br><br>
-            <h3 id="borrowMan">
-                操作：
-                <label for="rent"><input type="radio" name="operation" value="0" id="rent" checked>租借</label>
-                <label for="return"><input type="radio" name="operation" value="1" id="return">归还</label>
-            </h3>
-            <button type="submit" name="ok">确定</button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button type="reset" name="ok2">重置</button>
-        </form>
+    <div id="AudioDetails">
+        <h2>音频详细信息</h2>
+        <div>
+            <label for="title">标题:</label>
+            <span id="title">歌曲标题</span>
+        </div>
+        <div>
+            <label for="artist">艺术家:</label>
+            <span id="artist">艺术家名称</span>
+        </div>
+        <div>
+            <label for="genre">流派:</label>
+            <span id="genre">流派类型</span>
+        </div>
+        <div>
+            <label for="release_date">发行日期:</label>
+            <span id="release_date">2022-01-01</span>
+        </div>
+        <div>
+            <label for="price">价格:</label>
+            <span id="price">$9.99</span>
+        </div>
+        <div>
+            <label for="audio_format">音频格式:</label>
+            <span id="audio_format">MP3</span>
+        </div>
+        <div>
+            <label for="description">描述:</label>
+            <span id="description">音频描述</span>
+        </div>
+        <button type="button" onclick="goBack()">返回</button>
     </div>
+
+    <script>
+        // JavaScript function to go back to the previous page
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 </body>
 </html>
