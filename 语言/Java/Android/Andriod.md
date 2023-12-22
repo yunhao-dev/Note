@@ -51,6 +51,30 @@
 - Service意为：服务，是一种运行时用户不可见的活动机制
 	- Service不同与子线程，Service是运行在主线程中的，不能进行耗时操作。
 
+## 类型
+
+按启动方式分
+
+- 绑定式(bindService)
+	- 绑定服务后，服务就跟启动者(Acticity)的生命周期绑定在一起了，如果启动者销毁，服务也会跟着销毁。
+	- 启动者可以调用service里面的方法
+	- 生命周期
+		- 启动阶段：启动者(Activity)调用startService
+			- onCreate()：只会在首次创建执行一次
+			- onStartCommand()：每次startService都会执行
+		- 结束阶段：启动者(Activity)调用stopService或service内部调用stopSelf
+			- onDestroy()：服务销毁前的最后一个方法，可以做一些释放资源等收尾工作
+- 非绑定式(startService)
+	- 一旦服务开启就跟启动者没关系了，即使启动者退出，service依然在后台运行
+	- 启动者无法调用service里面的方法
+	- 生命周期
+		- 启动阶段：启动者(Activity)调用bindService
+			- onCreate()：只会在首次创建执行一次
+			- onBind()：也是只会在首次创建执行一次，再次调用bindService也不会执行onBind()了
+		- 结束阶段：启动者(Activity)销毁或调用UnBindService方法，会 解绑Service。当没有绑定者时，该Service会销毁
+			- onUnbind()：Service解绑
+			- onDestroy()：Service销毁
+
 ## 前台Service
 
 ### 概念

@@ -102,16 +102,20 @@ starter依赖提供的三个主要好处：
 - 可以根据它们提供的功能来考虑需要的依赖关系，而不是根据库名来考虑。如果正在开发一个web应用程序，那么将添加web starter依赖项，而不是一个编写web应用程序的各个库的清单。
 - 不用担心 library版本问题。可以相信的是，对于给定版本的Spring Boot,可间接地引入的库的版本将是兼容的，只需要考虑使用的是哪个版本的 Spring Boot。
 
-# Spring MVC
+# 注解
 
-## 请求映射注解
-
-| 注解            | 描述                |
-| --------------- | ------------------- |
-| @RequestMapping | 通用请求处理        |
-| @GetMapping     | 处理HTTP GET请求    |
-| @PostMapping    | 处理HTTP POST请求   |
-| @PutMapping     | 处理HTTP PUT请求    |
-| @DeleteMapping  | 处理HTTP DELETE请求 |
-| @PatchMapping   | 处理 HTTP PATCH     |
-
+| 注解                         | 描述                       |
+| ---------------------------- | -------------------------- |
+| @DeleteMapping               | 处理HTTP DELETE请求        |
+| @EnableAsync                 | 开启Spring的异步功能       |
+| @EnableScheduling            | 启用了Spring的任务调度功能 |
+| @EnableTransactionManagement | 开启Spring的事务支持       |
+| @GetMapping                  | 处理HTTP GET请求           |
+| @PatchMapping                | 处理 HTTP PATCH            |
+| @PostMapping                 | 处理HTTP POST请求          |
+| @PutMapping                  | 处理HTTP PUT请求           |
+| @RequestMapping              | 通用请求处理               |
+| @SpringBootApplication       | 标注一个Spring应用         |
+|                              |                            |
+|                              |                            |
+|                              |                            |
