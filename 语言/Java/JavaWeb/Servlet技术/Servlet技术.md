@@ -272,3 +272,15 @@ Servlet的生命周期是由容器管理的，分别经历三各阶段：
 3. destroyo：销毁
 
 ​	当客户端浏览器第一次请求Servlet时，容器会实例化这个Servlet，然后调用一次init方法，并在新的线程中执行service方法处理请求。service方法执行完毕后容器不会销毁这个Servlet而是做缓存处理，当客户端浏览器再次请求这个Servlet时，容器会从缓存中直接找到这个Servlet对象，并再一次在新的线程中执行Service方法。当容器在销毁Servlet之前对调用一次destory方法。
+
+## 6. HttpServletRequest对象
+
+​	HttpServletRequest对象代表客户端浏览器的请求，当客户端浏览器通过HTTP协议访问服务器时，HTTP请求中的所有信息都会Tomcat所解析并封装在这个对象中，通过这个对象提供的方法，可以获得客户端请求的所有信息。
+
+### 7.1获取请求信息 
+
+- req.getRequestURL() 返回客户端浏览器发出请求时的完整URL。
+- req.getRequestURL() 返回请求行中指定资源部分。
+- req.getRemoteAddr() 返回发出请求的客户机的IP地址。
+- req.getLocalAddr() 返回WEB服务器的IP地址。
+- req.getLocalPort() 返回WEB服务器处理Http协议的连接器所监听的端口。
