@@ -27,24 +27,29 @@ yum install -y docker
 
 ### 4. 搭建 Mysql 服务
 
-1.  拉取 Mysql 镜像
-    
-    ```
-    docker pull mysql:5.7
-    
-    ```
-    
-2.  运行镜像
-    
-    ```
-    docker run \
-    -p 3306:3306 \
-    --name mysql5.7 \
-    -v ~/mysql/data:/var/lib/mysql \
-    -e MYSQL_ROOT_PASSWORD=123456 \
-    --privileged=true \
-    docker.io/mysql:5.7
-    
-    ```
-    
-3.  测试
+1. 拉取 Mysql 镜像
+
+   ```
+   docker pull mysql:5.7
+   
+   ```
+
+2. 运行镜像
+
+   
+
+   ```
+   --restart=always开机启动
+   
+   docker run \
+   -p 3306:3306 \
+   --name mysql5.7 \
+   -v ~/mysql/data:/var/lib/mysql \
+   -e MYSQL_ROOT_PASSWORD=yunhao802351 \
+   --privileged=true \
+   --restart=always \ 
+   docker.io/mysql:5.7
+   
+   ```
+
+3. 测试
