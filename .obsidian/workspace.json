@@ -1,0 +1,158 @@
+{
+  "main": {
+    "id": "95435f7b9ad85855",
+    "type": "split",
+    "children": [
+      {
+        "id": "ffe0b06585b49dd6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc5515ab42767e7c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "软考/操作系统.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "92fa920db3b0ab1d",
+    "type": "split",
+    "children": [
+      {
+        "id": "5dffdd4865fcea23",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "83420ea782ff568c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "77d2297b30136db1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "71da7e3401c943f3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c0753a7995bee23a",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa3bc15907d17cdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a0b41717ca31b9c2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "软考/操作系统.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "255b8355233e1d70",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "软考/操作系统.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "865d9510cadf9ffb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0077bd8e4b2ba5af",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "软考/操作系统.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "dc5515ab42767e7c",
+  "lastOpenFiles": [
+    "语言/Java/JUC/并发编程.md",
+    "未命名.canvas",
+    "语言/Java/JUC/并发编程_模式篇.md",
+    "简历/template.md",
+    "简历/自我介绍.md",
+    "简历/后端.pdf"
+  ]
+}
